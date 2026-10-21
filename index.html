@@ -1,0 +1,619 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0d14" id="meta-theme-color">
+  <meta name="color-scheme" content="dark light">
+
+  <title>Ojas Yadav — AI &amp; ML Student, Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Ojas Yadav — B.E. Artificial Intelligence &amp; Machine Learning student building full-stack web applications with Python, Flask and PostgreSQL.">
+  <meta name="author" content="Ojas Yadav">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://ojasyadav-shadowmonarch.github.io/OjasYadav-Portfolio/">
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ojas Yadav">
+  <meta property="og:title" content="Ojas Yadav — Developer Portfolio">
+  <meta property="og:description" content="Engineering student in AI &amp; ML, building useful things with Python, Flask and PostgreSQL. Selected work, learning journey and contact details.">
+  <meta property="og:url" content="https://ojasyadav-shadowmonarch.github.io/OjasYadav-Portfolio/">
+  <meta property="og:image" content="https://ojasyadav-shadowmonarch.github.io/OjasYadav-Portfolio/assets/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ojas Yadav — Developer Portfolio">
+  <meta name="twitter:description" content="Engineering student in AI &amp; ML, building useful things with Python, Flask and PostgreSQL.">
+  <meta name="twitter:image" content="https://ojasyadav-shadowmonarch.github.io/OjasYadav-Portfolio/assets/og-cover.png">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/favicon.svg">
+
+  <!-- Apply the saved theme before first paint to avoid a flash of the wrong theme -->
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem("oj-theme");
+        var prefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+        document.documentElement.setAttribute("data-theme", stored || (prefersLight ? "light" : "dark"));
+      } catch (error) { /* storage unavailable — keep the default theme */ }
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ojas Yadav",
+    "jobTitle": "AI & Machine Learning Engineering Student / Software Developer",
+    "url": "https://ojasyadav-shadowmonarch.github.io/OjasYadav-Portfolio/",
+    "email": "mailto:ojas20070210@gmail.com",
+    "image": "https://ojasyadav-shadowmonarch.github.io/OjasYadav-Portfolio/assets/og-cover.png",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Kolhapur",
+      "addressRegion": "Maharashtra",
+      "addressCountry": "IN"
+    },
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "KIT's College of Engineering, Kolhapur"
+    },
+    "knowsAbout": [
+      "Python", "C", "Java", "HTML", "CSS", "JavaScript",
+      "Flask", "PostgreSQL", "SQL", "Git",
+      "Artificial Intelligence", "Machine Learning", "UI/UX", "Web Development"
+    ],
+    "sameAs": [
+      "https://github.com/OjasYadav-shadowmonarch",
+      "https://linkedin.com/in/ojas-yadav-61b3042b9",
+      "https://www.hackerrank.com/profile/ojas20070210",
+      "https://leetcode.com/u/IxXAlCC89Q/"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Scroll progress indicator -->
+  <div class="scroll-progress" aria-hidden="true"><span class="scroll-progress-bar" id="scroll-progress-bar"></span></div>
+
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Ojas Yadav — back to top">
+        <span class="brand-mark" aria-hidden="true">O</span>
+        <span class="brand-text">ojas<span class="brand-dot">.</span></span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#journey">Journey</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#connect">Connect</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light theme" aria-pressed="false">
+          <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.7"></circle>
+            <g stroke="currentColor" stroke-width="1.7" stroke-linecap="round">
+              <path d="M12 2.6v2.3M12 19.1v2.3M2.6 12h2.3M19.1 12h2.3M5.35 5.35l1.6 1.6M17.05 17.05l1.6 1.6M18.65 5.35l-1.6 1.6M6.95 17.05l-1.6 1.6"></path>
+            </g>
+          </svg>
+          <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M20.4 14.7A8.6 8.6 0 0 1 9.3 3.6a8.6 8.6 0 1 0 11.1 11.1Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <a class="nav-cta" href="#connect">Let's talk <span aria-hidden="true">↗</span></a>
+      </div>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation">
+        <span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero container" id="home" aria-labelledby="hero-title">
+      <canvas class="hero-particles" id="hero-particles" aria-hidden="true"></canvas>
+
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> OPEN TO LEARNING &amp; OPPORTUNITIES</p>
+        <p class="hero-kicker">B.E. Artificial Intelligence &amp; Machine Learning · KIT's College of Engineering, Kolhapur</p>
+        <h1 id="hero-title">Building useful things<br>with <span class="rotator-wrap"><span class="sr-only">code</span><span class="rotator gradient-text" id="rotator" aria-hidden="true">code</span></span><span class="hero-punctuation" aria-hidden="true">.</span></h1>
+        <p class="hero-intro">I'm Ojas — an engineering student exploring software development, web technologies, and AI. I learn by building, experimenting, and improving one project at a time.</p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↘</span></a>
+          <a class="button button-ghost" href="https://github.com/OjasYadav-shadowmonarch" target="_blank" rel="noopener noreferrer">GitHub profile <span aria-hidden="true">↗</span></a>
+          <a class="button button-ghost" href="#connect">Send a message</a>
+        </div>
+
+        <div class="hero-meta">
+          <span><span class="meta-icon" aria-hidden="true">⌁</span> Kolhapur, Maharashtra, India</span>
+          <span class="meta-separator" aria-hidden="true">/</span>
+          <span>Curious by default.</span>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="orbit orbit-one" aria-hidden="true"></div>
+        <div class="orbit orbit-two" aria-hidden="true"></div>
+
+        <div class="hero-console" role="img" aria-label="A code snippet introducing Ojas: a developer object with role, stack, current focus and open to opportunities status.">
+          <div class="console-head">
+            <span class="console-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="console-title">ojas.js</span>
+            <span class="console-status"><span class="status-dot"></span> live</span>
+          </div>
+          <pre class="console-body"><code id="console-code">const ojas = {
+  role: "AI &amp; ML student",
+  stack: ["Python", "Flask", "PostgreSQL"],
+  currently: "building useful things",
+  status: "open to opportunities"
+};
+
+ojas.build(); // ship · test · improve</code></pre>
+        </div>
+
+        <div class="float-card float-card-top"><span class="mini-dot"></span> learning in public</div>
+        <div class="float-card float-card-bottom"><span class="mono">01</span> build · test · improve</div>
+        <span class="spark spark-one" aria-hidden="true">✳</span>
+        <span class="spark spark-two" aria-hidden="true">✦</span>
+      </div>
+    </section>
+
+    <!-- ============ TICKER ============ -->
+    <div class="ticker" aria-label="Areas of interest">
+      <div class="ticker-track">
+        <span>SOFTWARE DEVELOPMENT</span><i>✳</i><span>FULL-STACK WEB</span><i>✳</i><span>AI / ML</span><i>✳</i><span>UI / UX</span><i>✳</i>
+        <span>SOFTWARE DEVELOPMENT</span><i>✳</i><span>FULL-STACK WEB</span><i>✳</i><span>AI / ML</span><i>✳</i><span>UI / UX</span><i>✳</i>
+      </div>
+    </div>
+
+    <!-- ============ STATS ============ -->
+    <section class="stats container" aria-label="Portfolio snapshot">
+      <div class="stat reveal">
+        <span class="stat-number" data-count="3" data-pad="2">03</span>
+        <span class="stat-label">Projects built</span>
+      </div>
+      <div class="stat reveal">
+        <span class="stat-number" data-count="15" data-pad="2">15</span>
+        <span class="stat-label">Technologies in the toolkit</span>
+      </div>
+      <div class="stat reveal">
+        <span class="stat-number" data-count="2" data-pad="2">02</span>
+        <span class="stat-label">Apps deployed to the web</span>
+      </div>
+      <div class="stat reveal">
+        <span class="stat-number stat-number-static">24/7</span>
+        <span class="stat-label">Learning and iterating</span>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section container" id="about" aria-labelledby="about-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">01 / A LITTLE ABOUT ME</p>
+        <h2 id="about-title">A student mindset.<br><span class="muted-heading">A builder's approach.</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <p class="lead">I'm pursuing a B.E. in Artificial Intelligence and Machine Learning at KIT's College of Engineering, Kolhapur.</p>
+          <p>I'm currently exploring where I want to specialize, with a strong interest in software and full-stack development. I enjoy taking an idea from a rough concept to a working interface, connecting it to data, and learning from the problems that show up along the way.</p>
+          <p>My current focus is strengthening fundamentals, building practical projects, and becoming a more thoughtful developer.</p>
+        </div>
+
+        <aside class="about-note reveal">
+          <span class="note-symbol" aria-hidden="true">✳</span>
+          <p class="note-label">CURRENT APPROACH</p>
+          <p class="note-quote">Stay curious.<br>Build consistently.<br>Keep getting better.</p>
+          <span class="note-foot mono">STATUS: EXPLORING</span>
+        </aside>
+      </div>
+
+      <dl class="fact-grid reveal">
+        <div class="fact">
+          <dt>Education</dt>
+          <dd>B.E. Artificial Intelligence &amp; Machine Learning</dd>
+        </div>
+        <div class="fact">
+          <dt>Institution</dt>
+          <dd>KIT's College of Engineering, Kolhapur</dd>
+        </div>
+        <div class="fact">
+          <dt>Focus</dt>
+          <dd>Software &amp; full-stack development</dd>
+        </div>
+        <div class="fact">
+          <dt>Based in</dt>
+          <dd>Kolhapur, Maharashtra, India</dd>
+        </div>
+      </dl>
+    </section>
+
+    <!-- ============ JOURNEY ============ -->
+    <section class="section section-alt" id="journey" aria-labelledby="journey-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">02 / THE PATH SO FAR</p>
+          <h2 id="journey-title">How I got <span class="muted-heading">here.</span></h2>
+          <p class="section-subtitle">A short, honest timeline of what I've built so far and what I'm focused on next.</p>
+        </div>
+
+        <ol class="timeline">
+          <li class="timeline-item reveal">
+            <span class="timeline-marker" aria-hidden="true"></span>
+            <p class="timeline-time mono">NOW</p>
+            <div class="timeline-card">
+              <h3>B.E. Artificial Intelligence &amp; Machine Learning</h3>
+              <p class="timeline-meta">KIT's College of Engineering, Kolhapur</p>
+              <p>Studying core AI and software fundamentals while exploring where I want to specialise. Currently leaning towards software engineering and full-stack web work.</p>
+              <div class="tag-row"><span>AI / ML</span><span>Software Engineering</span><span>Web Development</span></div>
+            </div>
+          </li>
+
+          <li class="timeline-item reveal">
+            <span class="timeline-marker" aria-hidden="true"></span>
+            <p class="timeline-time mono">BUILDING</p>
+            <div class="timeline-card">
+              <h3>HostelHub — student accommodation platform</h3>
+              <p class="timeline-meta">Flask · PostgreSQL · JavaScript · Deployed on Render</p>
+              <p>Designed and built a full-stack platform connecting students with hostel and room listings, with separate workflows for students, owners and administrators.</p>
+              <div class="tag-row"><span>Python</span><span>Flask</span><span>PostgreSQL</span><span>Role-based access</span></div>
+            </div>
+          </li>
+
+          <li class="timeline-item reveal">
+            <span class="timeline-marker" aria-hidden="true"></span>
+            <p class="timeline-time mono">EXPERIMENTING</p>
+            <div class="timeline-card">
+              <h3>StudyPulse — study planning prototype</h3>
+              <p class="timeline-meta">JavaScript · HTML · CSS · Browser storage</p>
+              <p>Contributed to a browser-based study planner that uses rule-based recommendations to structure study time and track progress.</p>
+              <div class="tag-row"><span>JavaScript</span><span>Rule-based logic</span><span>Local storage</span></div>
+            </div>
+          </li>
+
+          <li class="timeline-item reveal">
+            <span class="timeline-marker" aria-hidden="true"></span>
+            <p class="timeline-time mono">FOUNDATIONS</p>
+            <div class="timeline-card">
+              <h3>First steps into programming and the web</h3>
+              <p class="timeline-meta">Python · C · Java · HTML · CSS · SQL</p>
+              <p>Started with the fundamentals — language basics, problem solving on HackerRank and LeetCode, and small web projects that turned ideas into working pages.</p>
+              <div class="tag-row"><span>Python</span><span>Java</span><span>HTML / CSS</span><span>SQL</span></div>
+            </div>
+          </li>
+
+          <li class="timeline-item reveal">
+            <span class="timeline-marker" aria-hidden="true"></span>
+            <p class="timeline-time mono">NEXT</p>
+            <div class="timeline-card">
+              <h3>Sharpen fundamentals, ship more</h3>
+              <p class="timeline-meta">Ongoing</p>
+              <p>Strengthen core skills, build practical projects, contribute where I can, and prepare for internship and full-time opportunities in software development.</p>
+              <div class="tag-row"><span>Internships</span><span>Open Source</span><span>Full-stack</span></div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section container" id="skills" aria-labelledby="skills-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">03 / TOOLKIT</p>
+        <h2 id="skills-title">Tools I'm working with<span class="gradient-text">.</span></h2>
+        <p class="section-subtitle">A growing toolkit — focused on understanding the fundamentals, not just collecting technologies.</p>
+      </div>
+
+      <div class="skill-groups">
+        <article class="skill-group reveal">
+          <div class="skill-group-head"><span class="skill-number">01</span><h3>Programming</h3></div>
+          <div class="skill-list"><span>Python</span><span>C</span><span>Java</span></div>
+        </article>
+        <article class="skill-group reveal">
+          <div class="skill-group-head"><span class="skill-number">02</span><h3>Web development</h3></div>
+          <div class="skill-list"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Flask</span></div>
+        </article>
+        <article class="skill-group reveal">
+          <div class="skill-group-head"><span class="skill-number">03</span><h3>Data &amp; tools</h3></div>
+          <div class="skill-list"><span>PostgreSQL</span><span>SQL</span><span>Git</span><span>GitHub</span><span>VS Code</span></div>
+        </article>
+        <article class="skill-group reveal">
+          <div class="skill-group-head"><span class="skill-number">04</span><h3>Exploring</h3></div>
+          <div class="skill-list"><span>AI / ML</span><span>UI / UX</span><span>Figma</span></div>
+        </article>
+      </div>
+
+      <!-- How the pieces fit together -->
+      <div class="stack-map reveal" aria-label="How the toolkit fits together">
+        <p class="stack-title mono">HOW THE STACK FITS TOGETHER</p>
+        <ol class="stack-layers">
+          <li class="stack-layer">
+            <span class="stack-label">Interface</span>
+            <span class="stack-items">HTML · CSS · JavaScript · Figma</span>
+          </li>
+          <li class="stack-layer">
+            <span class="stack-label">Application</span>
+            <span class="stack-items">Python · Flask</span>
+          </li>
+          <li class="stack-layer">
+            <span class="stack-label">Data</span>
+            <span class="stack-items">PostgreSQL · SQL</span>
+          </li>
+          <li class="stack-layer">
+            <span class="stack-label">Workflow</span>
+            <span class="stack-items">Git · GitHub · VS Code</span>
+          </li>
+          <li class="stack-layer">
+            <span class="stack-label">Exploring</span>
+            <span class="stack-items">AI / ML · UI / UX</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-heading project-heading reveal">
+          <div>
+            <p class="eyebrow">04 / SELECTED WORK</p>
+            <h2 id="projects-title">Projects in progress<span class="gradient-text">.</span></h2>
+          </div>
+          <a class="text-link" href="https://github.com/OjasYadav-shadowmonarch?tab=repositories" target="_blank" rel="noopener noreferrer">Browse all repositories <span aria-hidden="true">↗</span></a>
+        </div>
+
+        <div class="filter-bar reveal" role="group" aria-label="Filter projects">
+          <button class="filter-btn is-active" type="button" data-filter="all" aria-pressed="true">All <span class="filter-count">3</span></button>
+          <button class="filter-btn" type="button" data-filter="fullstack" aria-pressed="false">Full-stack <span class="filter-count">1</span></button>
+          <button class="filter-btn" type="button" data-filter="prototype" aria-pressed="false">Prototype <span class="filter-count">1</span></button>
+          <button class="filter-btn" type="button" data-filter="frontend" aria-pressed="false">Frontend <span class="filter-count">1</span></button>
+        </div>
+
+        <div class="project-grid" id="project-grid">
+          <article class="project-card project-featured reveal" data-category="fullstack">
+            <div class="project-topline">
+              <span class="project-index">PROJECT / 01</span>
+              <span class="project-status"><span class="status-dot"></span> Deployed</span>
+            </div>
+            <div class="project-art hostel-art" aria-hidden="true">
+              <div class="map-grid"></div><span class="map-pin pin-a"></span><span class="map-pin pin-b"></span><span class="map-pin pin-c"></span>
+              <div class="map-route"></div><div class="map-label">HOSTELHUB <span>↗</span></div>
+            </div>
+            <div class="project-body">
+              <div class="project-title-row"><h3>HostelHub</h3><span class="project-kind">Full-stack web app</span></div>
+              <p>A student accommodation platform connecting students with hostel and room listings, with separate workflows for students, owners, and administrators.</p>
+              <ul class="project-highlights">
+                <li>Flask + PostgreSQL integration</li>
+                <li>Role-based workflows and listing moderation</li>
+                <li>Map-based property locations and responsive UI</li>
+              </ul>
+              <div class="tag-row"><span>Python</span><span>Flask</span><span>PostgreSQL</span><span>JavaScript</span></div>
+              <div class="project-links">
+                <a href="https://github.com/OjasYadav-shadowmonarch/hostelhub-postgres" target="_blank" rel="noopener noreferrer">View source <span aria-hidden="true">↗</span></a>
+                <a href="https://hostelhub-postgres.onrender.com" target="_blank" rel="noopener noreferrer">Live website <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="prototype">
+            <div class="project-topline">
+              <span class="project-index">PROJECT / 02</span>
+              <span class="project-status status-learning">Prototype</span>
+            </div>
+            <div class="project-art study-art" aria-hidden="true">
+              <div class="study-window"><div class="window-dots"><i></i><i></i><i></i></div><div class="study-line wide"></div><div class="study-line"></div><div class="study-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="study-check">✓</div></div>
+              <span class="study-orbit"></span>
+            </div>
+            <div class="project-body">
+              <div class="project-title-row"><h3>StudyPulse</h3><span class="project-kind">Contributed prototype</span></div>
+              <p>A browser-based study planner prototype that uses rule-based recommendations to help structure study time and track progress.</p>
+              <ul class="project-highlights">
+                <li>Rule-based study recommendations</li>
+                <li>Progress tracking stored in the browser</li>
+                <li>Responsive, dependency-free front end</li>
+              </ul>
+              <div class="tag-row"><span>JavaScript</span><span>HTML</span><span>CSS</span><span>Local storage</span></div>
+              <div class="project-links">
+                <a href="https://github.com/OjasYadav-shadowmonarch/studypulse" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="frontend">
+            <div class="project-topline">
+              <span class="project-index">PROJECT / 03</span>
+              <span class="project-status">Live site</span>
+            </div>
+            <div class="project-art portfolio-art" aria-hidden="true">
+              <div class="portfolio-window"><div class="portfolio-window-head"><span>OJ</span><span>PORTFOLIO / 2026</span></div><div class="portfolio-window-title">Ideas into<br><em>interfaces.</em></div><div class="portfolio-window-line"></div><div class="portfolio-window-chips"><i></i><i></i><i></i></div></div>
+            </div>
+            <div class="project-body">
+              <div class="project-title-row"><h3>Personal Portfolio</h3><span class="project-kind">Frontend</span></div>
+              <p>This portfolio — built to share my projects, technical interests, and learning journey in one place.</p>
+              <ul class="project-highlights">
+                <li>Responsive, dependency-free build</li>
+                <li>Scroll reveals and motion preferences respected</li>
+                <li>Deployed free with GitHub Pages</li>
+              </ul>
+              <div class="tag-row"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>GitHub Pages</span></div>
+              <div class="project-links">
+                <a href="https://github.com/OjasYadav-shadowmonarch/OjasYadav-Portfolio" target="_blank" rel="noopener noreferrer">View source <span aria-hidden="true">↗</span></a>
+                <a href="https://ojasyadav-shadowmonarch.github.io/OjasYadav-Portfolio/" target="_blank" rel="noopener noreferrer">Live website <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card project-more reveal" data-category="all">
+            <div class="project-more-inner">
+              <span class="project-index mono">MORE ON GITHUB</span>
+              <p>Small experiments, practice repositories and half-finished ideas live in my public profile.</p>
+              <a class="button button-ghost" href="https://github.com/OjasYadav-shadowmonarch?tab=repositories" target="_blank" rel="noopener noreferrer">See all repositories <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+
+        <p class="project-disclaimer mono">PROJECT NOTES: StudyPulse is a contribution; project details are kept to implemented features.</p>
+      </div>
+    </section>
+
+    <!-- ============ CREDENTIALS ============ -->
+    <!--
+      Replace the placeholder slots below with verified certificates, course
+      completions or awards. Keep the issuer, title and year accurate — see the
+      README for the exact format to use.
+    -->
+    <section class="section container" id="credentials" aria-labelledby="credentials-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">05 / CREDENTIALS</p>
+        <h2 id="credentials-title">Certificates &amp; <span class="muted-heading">achievements.</span></h2>
+        <p class="section-subtitle">Only verified credentials are published here — each entry names the issuer, the title and the year.</p>
+      </div>
+
+      <div class="credential-grid">
+        <article class="credential-card credential-slot reveal">
+          <span class="credential-badge mono">SLOT 01</span>
+          <h3>Certificate title</h3>
+          <p class="credential-issuer">Issuer · Year</p>
+          <p class="credential-note">Swap this slot for a verified certificate. Link it to the issuer or credential URL if you have one.</p>
+        </article>
+        <article class="credential-card credential-slot reveal">
+          <span class="credential-badge mono">SLOT 02</span>
+          <h3>Course completion</h3>
+          <p class="credential-issuer">Provider · Year</p>
+          <p class="credential-note">Short programs and course completions fit well here. Keep the description to one clear line.</p>
+        </article>
+        <article class="credential-card credential-slot reveal">
+          <span class="credential-badge mono">SLOT 03</span>
+          <h3>Award or achievement</h3>
+          <p class="credential-issuer">Organisation · Year</p>
+          <p class="credential-note">Hackathons, fellowships, chapter leadership or academic awards — add them as they are confirmed.</p>
+        </article>
+      </div>
+
+      <p class="credential-hint mono">HOW TO FILL THESE IN → edit the three cards above in <code>index.html</code>.</p>
+    </section>
+
+    <!-- ============ CONNECT ============ -->
+    <section class="section container" id="connect" aria-labelledby="connect-title">
+      <div class="contact-panel reveal">
+        <div class="contact-glow" aria-hidden="true"></div>
+
+        <div class="contact-layout">
+          <div class="contact-intro">
+            <p class="eyebrow">06 / FIND ME ONLINE</p>
+            <h2 id="connect-title">Good work starts<br>with a <span class="gradient-text">conversation.</span></h2>
+            <p class="contact-copy">I'm exploring software development opportunities and always open to learning from people building interesting things.</p>
+
+            <div class="contact-actions">
+              <a class="button button-primary" href="mailto:ojas20070210@gmail.com">
+                <svg class="button-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <rect x="2.5" y="4.5" width="19" height="15" rx="3" fill="none" stroke="currentColor" stroke-width="1.7"></rect>
+                  <path d="m3.6 7 8.4 6 8.4-6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"></path>
+                </svg>
+                Email me
+              </a>
+              <button class="button button-ghost" type="button" id="copy-email" data-copy="ojas20070210@gmail.com">
+                <svg class="button-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <rect x="8.5" y="8.5" width="12" height="12" rx="3" fill="none" stroke="currentColor" stroke-width="1.7"></rect>
+                  <path d="M15.5 5.5h-9a3 3 0 0 0-3 3v9" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"></path>
+                </svg>
+                <span id="copy-email-label">Copy address</span>
+              </button>
+            </div>
+
+            <div class="social-links" aria-label="Profiles">
+              <a href="https://github.com/OjasYadav-shadowmonarch" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 2.9-.39c.98 0 1.95.13 2.87.39 2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.69 5.4-5.25 5.69.41.36.78 1.06.78 2.14 0 1.55-.01 2.8-.01 3.18 0 .31.21.68.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"></path></svg>
+                GitHub <span aria-hidden="true">↗</span>
+              </a>
+              <a href="https://linkedin.com/in/ojas-yadav-61b3042b9" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5.001 2.5 2.5 0 0 1 0-5.001zM3.2 9.2h3.6V21H3.2zM9.3 9.2h3.45v1.6h.05c.48-.9 1.66-1.85 3.42-1.85 3.66 0 4.33 2.4 4.33 5.53V21h-3.6v-5.2c0-1.24-.02-2.84-1.73-2.84-1.73 0-2 1.35-2 2.75V21H9.3z"></path></svg>
+                LinkedIn <span aria-hidden="true">↗</span>
+              </a>
+              <a href="https://www.hackerrank.com/profile/ojas20070210" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M7 3H3v18h4v-6.5h6V21h4V3h-4v6.5H7V3z"></path></svg>
+                HackerRank <span aria-hidden="true">↗</span>
+              </a>
+              <a href="https://leetcode.com/u/IxXAlCC89Q/" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2.75" y="2.75" width="18.5" height="18.5" rx="5.5" fill="none" stroke="currentColor" stroke-width="1.8"></rect><text x="12" y="16.3" text-anchor="middle" font-family="DM Mono, monospace" font-size="9" font-weight="500" fill="currentColor">LC</text></svg>
+                LeetCode <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contact-form" novalidate>
+            <p class="form-title mono">SEND A MESSAGE</p>
+
+            <div class="field">
+              <label for="cf-name">Your name</label>
+              <input type="text" id="cf-name" name="name" autocomplete="name" placeholder="Ada Lovelace" required>
+            </div>
+
+            <div class="field">
+              <label for="cf-email">Your email</label>
+              <input type="email" id="cf-email" name="email" autocomplete="email" placeholder="you@example.com" required>
+            </div>
+
+            <div class="field">
+              <label for="cf-subject">What is this about?</label>
+              <select id="cf-subject" name="subject">
+                <option value="Opportunity">Opportunity or internship</option>
+                <option value="Collaboration">Collaboration</option>
+                <option value="Feedback">Feedback on my work</option>
+                <option value="Something else">Something else</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="message" rows="4" placeholder="Tell me a little about it…" required></textarea>
+            </div>
+
+            <button class="button button-primary button-block" type="submit">
+              Open in my email app <span aria-hidden="true">↗</span>
+            </button>
+
+            <p class="form-note" id="form-note" role="status" aria-live="polite">
+              This form composes the message and opens your default email app — nothing is stored on this site.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand footer-brand" href="#home">
+        <span class="brand-mark" aria-hidden="true">O</span>
+        <span class="brand-text">ojas<span class="brand-dot">.</span></span>
+      </a>
+      <p class="footer-note">Designed and built with curiosity — plain HTML, CSS and JavaScript.</p>
+      <p class="mono footer-copy"><span id="local-clock">IST --:--</span> · © <span id="year">2026</span> OJAS YADAV</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 19V5m0 0-6 6m6-6 6 6" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  </button>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
